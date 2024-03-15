@@ -17,8 +17,20 @@ $user_banned_word = $_GET['user-word-to-ban'];
 
     <h1>Risultati</h1>
 
-    <p><?php echo $user_text ?></p>
+    <p>
+        <?php echo $user_text ?>
+    </p>
 
+    <h3>
+        Lunghezza testo: 
+    
+        <?php
+        $result = strlen($user_text);
+        echo $result;
+        ?>
+    </h3>
+
+    
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
