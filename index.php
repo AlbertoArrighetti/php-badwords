@@ -18,21 +18,21 @@
 
 
 
-    <form action="results.php" class="m-auto " method="GET">
+    <form action="results.php" class="m-auto bg-dark" method="GET">
     <div class="row flex-column align-content-center">
         <div class="col">
-            <label for="textArea" class="form-label mb-3 d-block text-center  fw-bold fs-4 text-black ">Inserisci il testo che preferisci</label>
+            <label for="textArea" class="form-label mb-3 d-block text-center  fw-bold fs-4 text-danger ">Inserisci il testo che preferisci</label>
             <textarea class="form-control" name="user-text" id="textArea" rows="7"></textarea>
         </div>
 
         <div class="col mb-4 ">
-            <label for="bannedWord" class="form-label my-3 d-block text-center fw-bold fs-4 text-black "> Inserisci una parola da censurare</label>
+            <label for="bannedWord" class="form-label my-3 d-block text-center fw-bold fs-4 text-danger "> Inserisci una parola da censurare</label>
             <input type="text" class="form-control" id="bannedWord" name="user-word-to-ban">
         </div>
     </div>
 
     <div class="d-flex justify-content-center">
-        <input type="submit" class="btn btn-light">
+        <input type="submit" class="btn btn-danger">
     </div>
 
     </form>

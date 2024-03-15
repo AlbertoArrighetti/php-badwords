@@ -13,6 +13,9 @@ form {
     padding: 50px;
 
     border-radius: 50%;
-    background-color: #2d25f4;
     overflow-y: auto;
+}
+
+textarea {
+    max-height: 200px;
 }
