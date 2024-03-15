@@ -1,0 +1,18 @@
+body {
+    background-color: #060c29;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    height: 800px;
+
+    padding: 50px;
+
+    border-radius: 50%;
+    background-color: #2d25f4;
+    overflow-y: auto;
+}
