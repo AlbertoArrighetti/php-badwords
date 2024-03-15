@@ -18,7 +18,9 @@ $user_banned_word = $_GET['user-word-to-ban'];
     <h1>Risultati</h1>
 
     <p>
-        <?php echo $user_text ?>
+        <?php 
+        echo $user_text 
+        ?>
     </p>
 
     <h3>
@@ -30,6 +32,15 @@ $user_banned_word = $_GET['user-word-to-ban'];
         ?>
     </h3>
 
+
+    <h2>Testo con parole bannate</h2>
+
+    <p>
+        <?php 
+        $filtered_text = str_replace($user_banned_word, str_repeat('*', 3), $user_text); 
+        echo $filtered_text ;
+        ?>
+    </p>
     
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
